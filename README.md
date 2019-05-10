@@ -61,7 +61,7 @@ feathers generate service
 
 ![Service](./static/service.png)
 
-### Testing message service
+#### Testing message service
 
 Request:
 
@@ -97,3 +97,25 @@ class Service {
 ```
 
 **More on [Services](https://docs.feathersjs.com/guides/basics/services.html).**
+
+### Generating a service for a mongoose model
+
+We will be using [feathers-mongoose](https://github.com/feathersjs-ecosystem/feathers-mongoose) plugin (it will be installed automatically).
+
+Generating the service is the same as before:
+
+```bash
+feathers generate service
+```
+
+You have to specify the mongodb uri on the first mongose service you generate. It will configure its connection for you automatically and it won't be asked twice. How cool is that?!
+
+![mongoose-service](./static/mongoose-service.png)
+
+This is how your model will look like at first. Check [Mongoose](http://mongoosejs.com/docs/models.html) doc for more.
+
+![user-model](./static/user-model.png)
+
+#### Querying
+
+_To be done..._ Check [FeathersJS official querying doc](https://docs.feathersjs.com/api/databases/querying.html) while so.
